@@ -1,0 +1,284 @@
+.header {
+    background-color: mediumpurple;
+    height: 300px;
+    font-size: 0.8em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 700px;
+}
+
+.logo {
+    width: 800px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo h1, .logo h1 a, .logo h1 a:hover {
+    font: normal 200% 'centry-gothic', sans-serif;
+    color: white;
+    margin: 0 0 0 9px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.logo h2 {
+    font-size: 0.9em;
+    margin: 4px 0 0 9px;
+}
+
+.menu {
+    width: 900px;
+    height: 46px;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 0 0 0 9px;
+    margin: 1px 2px 0 0;
+}
+
+.menu li a {
+    font: normal 100% 'trebuchet ms', sans-serif;
+    display: block;
+    height: 20px;
+    padding: 6px 35px 5px 28px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    transform: scale(1.5);
+}
+
+.menu ul li.active a {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site_content {
+    width: 880px;
+    overflow: hidden;
+    margin: 30px auto 0 auto;
+    background-color: aliceblue;
+}
+
+.sidebar {
+    float: right;
+    width: 254px;
+}
+
+.block {
+    margin: 300px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="search"] {
+    border: solid 1px black;
+    width: 60%;
+    padding: 8px;
+}
+
+.button {
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    width: 20%;
+}
+
+.sidebar h2 {
+    font: normal 140% 'centry gothic';
+    color: black;
+}
+
+input [type="search"], input[type="text"], input[type="password"] {
+    border: solid 1px black;
+    width: 60%;
+    padding: 8px;
+}
+
+.passreg {
+    font-size: 0.7em;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 28px 0 5px 0;
+    text-align: center;
+    background-color: mediumpurple;
+    color: black;
+    font-size: 0.7em;
+}
+
+
+.all_news {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 660px;
+    max-width: 900px;
+    width: calc(100% - 100px);
+    height: 400px;
+}
+
+.all_new {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--newPhoto, var(--defaultBackground, red));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.all_new:nth-child(1) {
+    --defaultBackground: red;
+}
+
+.all_new:nth-child(2) {
+    --defaultBackground: orange;
+}
+
+.all_new:nth-child(3) {
+    --defaultBackground: yellow;
+}
+
+.all_new:nth-child(4) {
+    --defaultBackground: green;
+}
+
+.all_new:nth-child(5) {
+    --defaultBackground: blue;
+}
+
+.all_new.label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.all_new.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    white-space: pre;
+}
+
+.all_new.all_new.info>div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.all_new.main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.all_new.sub {
+    transition-delay: 0.1s;
+}
+
+.all_new.active {
+    flex-grow: 10000;
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
+.all_new.active.label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.all_new.active.info>div {
+    left: 0px;
+    opacity: 1;
+}
+
+.all_new:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.all_new:not(.active).label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.all_new:not(.active).info>div {
+    left: 20px;
+    opacity: 0;
+}
+
+.all_new.main a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.all_new.main:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.site_content {
+    width: 1160px;
+}
+
+h1 {
+    font: bold 150% "centry-gothic", sans-serif;
+    color: black;
+    margin: 0 0 0 9px;
+    letter-spacing: 0.1em;
+}
+
+hr {
+    border-top: solid 2px black;
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: mediumpurple;
+}
+
+.posts h2, h2 a, h2 a:hover {
+    text-decoration: none;
+    font: normal 140% 'centry-gothic', arial;
+    color: black;
+}
+
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+
+.posts_content {
+    font: normal 100% 'trebuchet ms', sans-serif;
+    color: black;
+}
